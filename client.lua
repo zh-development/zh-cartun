@@ -1,7 +1,7 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
-QBCore.Commands.Add('tu', "0",{}, false, function(source)
-    ClearVehicleCustomPrimaryColour(GetVehiclePedIsIn(GetPlayerPed(-1), false))
+RegisterNetEvent('zh-cartun:client:tun', function(source)
+  ClearVehicleCustomPrimaryColour(GetVehiclePedIsIn(GetPlayerPed(-1), false))
 	ClearVehicleCustomSecondaryColour(GetVehiclePedIsIn(GetPlayerPed(-1), false))
 	SetVehicleModKit(GetVehiclePedIsIn(GetPlayerPed(-1), false), 0)
 	SetVehicleWheelType(GetVehiclePedIsIn(GetPlayerPed(-1), false), 7)
@@ -49,4 +49,8 @@ QBCore.Commands.Add('tu', "0",{}, false, function(source)
 	SetVehicleModColor_2(GetVehiclePedIsIn(GetPlayerPed(-1), false), 3, 12)
 	SetVehicleColours(GetVehiclePedIsIn(GetPlayerPed(-1), false), 12, 12)
 	SetVehicleExtraColours(GetVehiclePedIsIn(GetPlayerPed(-1), false), 12, 12)	
-end, 'god')
+end)
+
+
+
+
