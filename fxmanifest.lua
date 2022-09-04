@@ -2,7 +2,7 @@ fx_version      'adamant'
 game            'gta5'
 
 arthur"zh-development"
-server_scripts {
+client_scripts {
 		"client.lua",
 }
 
